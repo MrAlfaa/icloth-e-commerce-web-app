@@ -1,0 +1,123 @@
+
+<!DOCTYPE.html>
+<html>
+	<head>
+		<title> ORDER FORM </title>	
+			
+			<link rel="stylesheet" href="../styles/designer.css">
+			<link rel="stylesheet" href="../styles/style1.css">
+				
+	</head>
+
+	<body style="background-color : #c2d6d6;" >
+		<!--img class="logo" src="images/logo.jpg" alt="shopping cart logo" width="200px" height="200px"-->
+  
+			<img  class ="logo"  src = "../images/logo.png"> 
+				<center>
+					<h2  class="welcometext"> WELCOME   TO   ICLOTHES MANUFACTURES </h2>
+				</center>
+  
+		<!--icon bar-->
+		
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+				<div class="icon-bar">
+					<input type="text" class="search" placeholder="Search.." >
+						<a href="../php/logout.php"class="login" >LOGOUT</a> 
+						<a class="active" href="../php/payment.php" class="cart"><font-size:204px>CART</a> 
+				</div>
+
+
+			<hr class="hrl">
+		
+		<!--nav bar-->
+ 
+			<ul class="menu">
+				<li class = "menu"> <a href="HOME.html">HOME</a> </li>
+				<li class = "menu"> <a href="womenHome.html">WOMEN</a> </li>
+				<li class = "menu"> <a href="MEN">MEN</a> </li>
+				<li class = "menu"> <a href="KID">KID</a> </li>
+				<li class = "menu"> <a href="fabric.html">FABRICS</a> </li>
+				<li class = "menu"> <a href="designerHome.html">DESIGNER</a> </li>
+				  
+			</ul>
+	
+			
+		<!-- add page photo-->
+
+		<img src = "../images/q4.jpg" style = "width: 100%" >
+
+		<!--designer page nav bar-->
+		
+			<ul class = "menud">
+				<li class = "menud"><a href="all_designers.html">All</a></li>
+				<li class = "menud"><a href="global_designers.html">Global</a></li>
+				<li class = "menud"><a href="local_designers.html">Local</a></li>
+				<li class = "menud"><a href="pioneers.html">Pioneers</a></li>
+				<li class = "menud"><a class = "actived" href="orderform.html">Place Order</a></li>
+
+			</ul>
+	
+	
+	
+		<h2> PLACE YOUR ORDER </h2>
+		<form method = "post" action = "../php/order.php">
+	
+			<fieldset>
+		
+				<legend > Customer Details </legend>
+				
+				Customer ID <br>
+				<input type = "text"  name  = "cID"   id  = "cID"  required> <br/><br/>
+				
+				Customer Name <br>
+				<input type = "text"  name  = "cName" id  = "cName"required> <br/><br/>
+				
+				Customer Contact Number <br>
+				<input type = "text" name = "phone" id = "phone" required> <br/><br/>
+				
+				Address <br>
+				<textarea rows = "3" cols = "198" name = "address" id = "address" required></textarea> <br/>
+				
+			</fieldset>
+			<br/><br/>
+			
+			
+			<fieldset>
+		
+				<legend > Your Designer </legend>
+				
+				Designer ID <br>
+				<input type = "text"  name  = "dID"   id  = "dID" required> <br/><br/>
+				
+				Designer Name <br>
+				<input type = "text"  name  = "dName"  id  = "dName"required> <br/><br/>
+				
+				
+			</fieldset>
+			<br/><br/>
+		
+		
+			<fieldset>
+			
+				<legend> What Is On Your Mind </legend>
+				
+				<textarea rows = "20" cols = "198" name = "needs" id = "needs" required></textarea> <br/>
+				
+			</fieldset>
+			<br/><br/>
+		
+		
+
+			
+		
+			<center>
+			<input class = "lbutton" type = "Submit" value = "Submit"  name = "Submit"  id = "Submit">  
+			<input class = "lbutton" type = "Reset" value = "Reset"  name = "Reset"   id = "Reset">
+			</center>
+		
+		</form>
+		
+	</body>
+	
+</html>		
+			

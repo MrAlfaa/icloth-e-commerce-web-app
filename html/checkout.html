@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	<title>iCLOTHES |Checkout</title>
+	    <link rel="stylesheet" href="../styles/checkoutStyle.css">
+		<script src="../js/checkoutScript.js"></script>
+   </head>
+   <body>
+   <h1 align =" left">CHECK OUT</h1>
+   <form method="post" action=checkout.php" class="form1">
+   <fieldset>
+   <legend><h2>Contact Details</h2></legend>
+   <input type="text" name="firstname" placeholder="First Name" required>
+   <input type="text" name="lastname" placeholder="Last Name" required><br/><br/>
+   <input type="text" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required><br/><br/>
+   <input type="text" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required><br/><br/>
+   <input type="text" name="mobile2" placeholder="Secondary Mobile Number" pattern="[0-9]{10}" required><br/><br/>
+  <textarea name="address" rows="8" cols="50" placeholder="Address" required></textarea> <br/><br/>
+   <input type="text" name="country" placeholder="Country" required>
+   <input type="text" name="zip" placeholder="ZIP code" required><br/><br/>
+   <input type="submit" id="subpay" class="btn" value="Pay" name="submit1" onclick="click()" >
+   </fieldset>
+   </form>
+   
+   <form method="post" action=checkout.php" class="form2">
+   <fieldset>
+   <legend><h2>Your Order</h2></legend>
+   <p>Sub Total</p><br/>
+   <p>Shipping </p></br>
+   <p>Total </p>
+   </fieldset>
+   </form>
+   
+   <form method="post" action=checkout.php" class="form3">
+   <fieldset>
+   <legend><h2>Payment</h2></legend>
+  Card Type         <select name="cardtype" class="pay" required>
+					<option>Visa</option>
+					<option>Master Card</option>
+					<option>American Express</option>
+				    </select><br/><br>
+  Card Number       <input type="text" class="pay" name="crdno" pattern="[0-9]{16}" title="Please Input 16 Digits"required>
+				<br><br>
+  Name on Card      <input type="text" class="pay" name="noc" required pattern="[A-Za-z]+">
+				<br><br>
+  CVV    	         <input type="text" class="pay" name="cvv" required>
+				<br><br>
+  Expire Date        <input type="month" class="pay" name="expdte" required><br>
+   </fieldset>
+   </form>
+   
+   <div class="instrct">
+   <h2 class="instrct" >Special Instructions</h2>
+   <textarea name="instructions" rows="7" cols="50" placeholder="Type..." ></textarea>
+   <input type="submit" id="subpay" class="btn" value="Pay" name="submit2" onclick="click()" >
+   </div>
+   </body>
+   
+   
+   

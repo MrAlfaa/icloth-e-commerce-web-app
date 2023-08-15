@@ -1,0 +1,145 @@
+<?php
+session_start();
+if(isset($_SESSION['LoginUser'])){
+	header('location:login.php');
+}
+?>
+<!DOCTYPE html>
+<html>
+   <head>
+	<title>iCLOTHES | HOME</title>
+	    <link rel="stylesheet" href="../styles/style1.css">
+   </head>
+<body>  
+
+  <!--img class="logo" src="images/logo.jpg" alt="shopping cart logo" width="200px" height="200px"-->
+  
+ <img  class ="logo"  src = "../images/logo.png"> 
+  <center>
+   
+    <h2  class="welcometext"> WELCOME  TO   ICLOTHES MANUFACTURES </h2>
+  </center>
+  
+<!--icon bar-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="icon-bar">
+  <input type="text" class="search" placeholder="Search.." >
+  <a href="../php/logout.php"class="login" >LOGOUT</a> 
+  <a class="active" href="../php/payment.php" class="cart"><font-size:204px>CART</a> 
+ 
+</div>
+
+
+<hr class="hrl">
+<!--nav bar-->
+ 
+    <ul class="menu">
+		 <li class = "menu"> <a href="home.html">HOME</a> </li>
+		 <li class = "menu"> <a href="womenhome.html">WOMEN</a> </li>
+		 <li class = "menu"> <a href="MEN">MEN</a> </li>
+		 <li class = "menu"> <a href="KID">KID</a> </li>
+		 <li class = "menu"> <a href="fabric.html">FABRICS</a> </li>
+		 <li class = "menu"> <a href="designerHome.html">DESIGNER</a> </li>
+		  
+	</ul>
+	<br><br>
+	<h2>Welcome<?php echo $_SESSION['LoginUser'];?></h2><br/>
+	
+	
+	
+	
+	<!--slide show-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<div class="slideshow-container">
+    <div class="mySlides fade">
+    <img src="../images/1.jpg" style= " width:144.5%">
+    </div>
+    <div class="mySlides fade">
+    <img src="../images/2.jpg" style="width:144.5%  " >
+    </div>
+    <div class="mySlides fade">
+    <img src="../images/3.jpg" style=" width:144.5%" >
+    </div>
+    </div><br>
+
+   <div style="text-align:center">
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   <span class="dot"></span> 
+   </div>
+
+<!--slide show script-->
+	  <script>
+	  let slideIndex = 0;
+	  showSlides();
+	  function showSlides() {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 3000); // Change image every 3 seconds
+	  }
+      </script>
+	  
+	<hr>
+	
+	<footer>
+  <ul class="menu2">
+		
+		 <li class = "menu2"> <a href="exchange">RETURN & EXCHANGE</a> </li>
+		 <li class = "menu2"> <a href="feedback">FEEDBACK</a> </li>
+		 <li class = "menu2"> <a href="cus_service">CUSTOMER SERVICE</a> </li>
+		 <li class = "menu2"> <a href="warehouse">WAREHOUSE</a> </li>
+		 
+</ul><br>
+	<hr class="hrl">
+	 
+<!--nav bar-->
+ 
+    
+	</ul>
+	<footer>
+	<ul class="menu03">
+		<li class = "menu03"> <a href="contactus.html">Contact US</a> </li>
+		<li class = "menu03"> <a href="HOME.html">About us</a> </li>
+		<p class = "Address"> NO:14,Galle Road,Colombo-13. </p>
+		
+<!-- icon-->
+    <center>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+
+ 
+ 
+
+<!--  icons -->
+	 
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-twitter"></a>
+	<a href="#" class="fa fa-google"></a>
+	<a href="#" class="fa fa-instagram"></a>
+	<a href="#" class="fa fa-pinterest"></a>
+	 
+ 	 </center>
+    <p class="copyright">© Copyright iCLOTHES | All Rights Reserved</p> 
+	
+	
+    </footer>
+	
+	
+	
+	 
+
+
+     

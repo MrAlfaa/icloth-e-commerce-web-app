@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Register Page </title>
+	<link rel="stylesheet" type="text/css" href="../styles/Registerpage.css">
+	<script src="../js/myscript2.js"></script>
+
+</head>
+<body>
+
+
+
+<div class="RegisterContainer">
+	<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+ 
+		<div class="logo">
+			<img src="../images/logo.png" width="200px" height="auto">
+		</div>
+
+		<div class="RegName">Register to iCLOTHES</div>
+
+	    <hr>
+	    <label for=""><b>First Name</b></label>
+	    <input type="text" placeholder="First Name"  name="firstname" id="firstname">
+
+        <label for=""><b>Last Name</b></label>
+        <input type="text" placeholder="Last Name" name="lastname" id="lastname">
+
+	    <label for=""><b>Email</b></label>
+	    <input type="email" placeholder="Email" name="email" id="email">
+
+	    <label for=""><b>Password</b>
+	    <input type="password" placeholder="Enter Password" name="password" id="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onkeyup="check()" required>
+		</lable><br>
+	    <label for=""><b>Repeat Password</b>
+	    <input type="password" placeholder="Repeat Password" name="repeatpassword" id="repeatpassword" onkeyup="check()" required>
+			<span id='message'></span>
+		 	</lable>
+	    <hr>
+	    <div class="registerbtn">
+	    	<input type="submit" value="Submit" id="submit">
+		</div>
+	</form>
+</div>
+		</div>
+	
+</body>
+</html>
