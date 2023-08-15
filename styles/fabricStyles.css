@@ -1,0 +1,73 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 0px;
+}
+
+
+	
+.ppp {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;  
+}
+
+
+/*ordinary fabrics page*/
+ .fc button {
+  border: 1px solid #33bbff;
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  background-color:white;
+}
+
+/* Clear floats (clearfix hack) */
+.fc:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fc button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+ .of{
+  max-width: 200px;
+  height: 150px;
+}
+
+.col {
+  flex: 33.33%;
+  padding: 48px;
+}
+
+/*functional fabrics*/
+.ff{
+  max-width: 200px;
+  height: 150px;
+}
+
+
+
+
+
+	     
